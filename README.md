@@ -1,50 +1,16 @@
-This folder demonstrates how to use [React PDF viewer](https://react-pdf-viewer.dev) with [Create React App](https://github.com/facebook/create-react-app).
+# Olá este é o App react pdf-viewer !!
 
-## Install
+criei este projetinho para aprender como funciona a lib REACT PDF VIEWER !!
 
-* Install the dependencies
+Você pode visualizar este projeto clicando <a href="https://pdf-viewer.carolcedro.tech/"> AQUI</a>   <--
 
-```console
-$ npm install
-```
+você pode ver o preview do projeto aqui !!
 
-* Build
 
-```console
-$ npm run build
-```
+Inicio ->
+![image](https://user-images.githubusercontent.com/75391803/150425828-8cbbef67-4646-4fe1-a82f-dbb76e12ccd9.png)
 
-* Run locally
+Carregando um pdf ->
+![image](https://user-images.githubusercontent.com/75391803/150426041-6c558188-6f69-491d-8977-7b0466adb1be.png)
+![image](https://user-images.githubusercontent.com/75391803/150426158-a815b43d-2a14-4c6a-a07b-3212cd607e06.png)
 
-```console
-$ npm run start
-```
-
-Visit http://localhost:3000 to see it in action.
-
-## Spotlights
-
-[App.js](src/App.js):
-
-``` javascript
-import { Viewer, Worker } from '@react-pdf-viewer/core';
-import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
-
-import '@react-pdf-viewer/core/lib/styles/index.css';
-import '@react-pdf-viewer/default-layout/lib/styles/index.css';
-
-const defaultLayoutPluginInstance = defaultLayoutPlugin();
-
-return (
-    <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.12.313/build/pdf.worker.js">
-        <div style={{ height: '750px' }}>
-            <Viewer
-                fileUrl={`${process.env.PUBLIC_URL}/pdf-open-parameters.pdf`}
-                plugins={[
-                    defaultLayoutPluginInstance,
-                ]}
-            />
-        </div>
-    </Worker>
-);
-```
